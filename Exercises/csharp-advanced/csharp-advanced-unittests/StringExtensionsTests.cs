@@ -4,19 +4,16 @@ namespace csharp_advanced_unittests
 {
 	public class StringExtensionsTests
 	{
-		[Fact]
-		public void IsPalindrome_InputIsPalindrome_ReturnsTrue()
+		[Theory]
+		[InlineData("madam", true)]
+		[InlineData("hello", false)]
+		[InlineData("racecar", true)]
+		public void IsPalindrome_InputIsPalindrome_ReturnsBool(string input, bool expected)
 		{
-			var _IsPalindrome = StringExtensions.IsPalindrome("Abba");
-			Assert.True(_IsPalindrome);
+			bool result = StringExtensions.IsPalindrome(input);
+			Assert.Equal(expected, result);
 		}
 
-		[Fact]
-		public void IsPalindrome_InputIsPalindrome_ReturnsFalse()
-		{
-			var _IsPalindrome = StringExtensions.IsPalindrome("BaBa");
-			Assert.False(_IsPalindrome);
-		}
 		[Fact]
 		public void IsPalindrome_InputIsPalindrome_ReturnsNull()
 		{
