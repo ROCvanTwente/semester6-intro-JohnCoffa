@@ -2,6 +2,11 @@
 {
 	public static class StringExtensions
 	{
+		/// <summary>
+		/// Checks if the input is a palindrome
+		/// </summary>
+		/// <param name="Palindrome"></param>
+		/// <returns></returns>
 		public static bool IsPalindrome(this string Palindrome)
 		{
 			try
@@ -20,6 +25,11 @@
 			}
 		}
 
+		/// <summary>
+		/// Reverses the string
+		/// </summary>
+		/// <param name="input"></param>
+		/// <returns></returns>
 		private static string ReverseString(string input)
 		{
 			var Chars = input.ToCharArray();

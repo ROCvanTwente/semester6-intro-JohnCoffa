@@ -15,7 +15,7 @@ namespace csharp_advanced_unittests
 		}
 
 		[Fact]
-		public void IsPalindrome_InputIsPalindrome_ReturnsNull()
+		public void IsPalindrome_InputIsNullOrEmpty_ReturnsNullOrEmpty()
 		{
 			var _IsPalindrome = StringExtensions.IsPalindrome("");
 			Assert.False(_IsPalindrome);
