@@ -1,8 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<div class="card-wrapper d-flex flex-row justify-content-center align-content-center">
+    <div class="card m-1" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="card m-1" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Valuta omzetten</h5>
+            <p class="card-text">Hier kun je jouw valuta omzetten naar een ander land.</p>
+            <a asp-controller="CSharp" asp-action="ChangeCurrency" class="btn btn-primary">Naar Opdracht</a>
+        </div>
+    </div>
+
+    <div class="card m-1" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Voeg minuten toe</h5>
+            <p class="card-text">Hier kun je minuten toevoegen aan een datum</p>
+            <a asp-controller="CSharp" asp-action="AddMinutes" class="btn btn-primary">Naar Opdracht</a>
+        </div>
+    </div>
 </div>

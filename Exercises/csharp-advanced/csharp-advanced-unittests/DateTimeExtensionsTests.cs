@@ -13,7 +13,7 @@ namespace csharp_advanced_unittests
 			// 24 maart 2025 om 14:30
 			DateTime testDateTime = new DateTime(2025, 3, 24, 14, 30, 0); 
 
-			var result = DateTimeExtensions.AddMinutes(testDateTime, input);
+			var result = DateTimeExtensions.AddMinutes(input, testDateTime);
 
 			var expected = testDateTime.AddMinutes(input);
 			Assert.Equal(expected, result);
@@ -29,7 +29,7 @@ namespace csharp_advanced_unittests
 			// 24 maart 2025 om 14:30
 			DateTime testDateTime = new DateTime(2025, 3, 24, 14, 30, 0);
 
-			var result = DateTimeExtensions.AddMinutes(testDateTime, input);
+			var result = DateTimeExtensions.AddMinutes(input, testDateTime);
 
 			var expected = testDateTime.AddMinutes(input);
 			Assert.Equal(expected, result);

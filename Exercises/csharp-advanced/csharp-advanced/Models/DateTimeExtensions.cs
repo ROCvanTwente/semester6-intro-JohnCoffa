@@ -2,7 +2,7 @@
 
 namespace csharp_advanced.Models
 {
-	public class DateTimeExtensions
+	public static class DateTimeExtensions
 	{
 		/// <summary>
 		/// adds minutes 
@@ -10,9 +10,10 @@ namespace csharp_advanced.Models
 		/// <param name="CurrentDateTime"></param>
 		/// <param name="addMinutes"></param>
 		/// <returns></returns>
-		public static DateTime AddMinutes(DateTime CurrentDateTime, int addMinutes)
+		public static DateTime AddMinutes(this int addMinutes, DateTime CurrentDateTime)
 		{
 			return CurrentDateTime.AddMinutes(addMinutes);
+
 		}
 	}
 }
