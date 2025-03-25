@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-advanced", "csharp-a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-advanced-unittests", "csharp-advanced-unittests\csharp-advanced-unittests.csproj", "{9EE99EBD-C780-4AB4-A4DE-EA2C3AA66A7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-advanced-library", "csharp-advanced-library\csharp-advanced-library.csproj", "{3210694C-21C2-4662-8A71-49EEA4BADCC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9EE99EBD-C780-4AB4-A4DE-EA2C3AA66A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EE99EBD-C780-4AB4-A4DE-EA2C3AA66A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EE99EBD-C780-4AB4-A4DE-EA2C3AA66A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3210694C-21C2-4662-8A71-49EEA4BADCC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3210694C-21C2-4662-8A71-49EEA4BADCC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3210694C-21C2-4662-8A71-49EEA4BADCC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3210694C-21C2-4662-8A71-49EEA4BADCC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

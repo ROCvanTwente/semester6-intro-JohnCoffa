@@ -1,8 +1,10 @@
 ﻿using System.Globalization;
 using csharp_advanced.Enums;
 using csharp_advanced.Extensions;
+using csharp_advanced_library;
 using csharp_advanced.Models;
 using Microsoft.AspNetCore.Mvc;
+using static csharp_advanced_library.Interfaces;
 
 namespace csharp_advanced.Controllers
 {
@@ -48,6 +50,35 @@ namespace csharp_advanced.Controllers
 			}
 
 			return View();
+		}
+
+		[HttpGet]
+		public IActionResult MessageLogger()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult MessageLogger(string message, string choice)
+		{
+			FileLogger logger = new();
+			ConsoleLogger ConsoleLog = new();
+			ConsoleFileLogger ConsoleFile = new();
+			switch (choice)
+			{
+				case "txt":
+					logger.LogMessage(message);
+				break;
+				case "console":
+					ConsoleLog.LogMessage(message);
+				break;
+				case "txt en console":
+					ConsoleFile.LogMessage(message);
+				break;
+			}
+			return View();
+
+
 		}
 	}
 }
