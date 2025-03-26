@@ -8,10 +8,9 @@ namespace csharp_advanced.Extensions
 	{
 		public static string ToCurrencyString(this decimal amount, CurrencyEnum currency)
 		{
-			// Check if the currency is valid; if not, return just the amount
 			if (!Enum.IsDefined(typeof(CurrencyEnum), currency))
 			{
-				return amount.ToString(); // Return amount as string if currency is unknown
+				return amount.ToString(); 
 			}
 
 			CultureInfo cultureInfo = currency switch
@@ -25,7 +24,7 @@ namespace csharp_advanced.Extensions
 
 			if (cultureInfo == null)
 			{
-				return amount.ToString(); // If culture is null, just return the amount as a string
+				return amount.ToString(); 
 			}
 
 			return string.Format(cultureInfo, "{0:C}", amount);

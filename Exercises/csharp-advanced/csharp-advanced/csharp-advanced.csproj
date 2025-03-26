@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Logs\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\csharp-advanced-library\csharp-advanced-library.csproj" />
   </ItemGroup>
 
