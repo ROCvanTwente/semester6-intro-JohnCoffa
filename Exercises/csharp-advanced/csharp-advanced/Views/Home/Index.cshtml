@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="card-wrapper d-flex flex-row justify-content-center align-content-center">
+    <div class="card m-1" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Valuta omzetten</h5>
+            <p class="card-text">Hier kun je jouw valuta omzetten naar een ander land.</p>
+            <a asp-controller="CSharp" asp-action="ChangeCurrency" class="btn btn-primary">Naar Opdracht</a>
+        </div>
+    </div>
+
+    <div class="card m-1" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Voeg minuten toe</h5>
+            <p class="card-text">Hier kun je minuten toevoegen aan een datum</p>
+            <a asp-controller="CSharp" asp-action="AddMinutes" class="btn btn-primary">Naar Opdracht</a>
+        </div>
+    </div>
+
+    <div class="card m-1" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Log een bericht</h5>
+            <p class="card-text">Log een bericht naar een tekstbestand</p>
+            <a asp-controller="CSharp" asp-action="MessageLogger" class="btn btn-primary">Naar Opdracht</a>
+        </div>
+    </div>
+</div>

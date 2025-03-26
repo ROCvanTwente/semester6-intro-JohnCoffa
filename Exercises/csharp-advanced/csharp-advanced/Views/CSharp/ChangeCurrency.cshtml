@@ -1,0 +1,27 @@
+﻿@using csharp_advanced.Enums
+@{
+    ViewData["Title"] = "Valuta omzetten";
+}
+<a href="/">Terug</a>
+
+<h3>Zet valuta om</h3>
+<form class="form-control w-50 d-flex justify-content-center flex-column" method="post">
+    <label class="form-label" for="amount">Waarde:</label>
+    <input class="form-control"type="number" step="0.01" name="amount" id="amount" required />
+
+    <label class="form-label" for="currency">Valuta:</label>
+    <select class="form-check" name="country" id="currency">
+        <option value="">Kies een valuta</option> 
+        @foreach (var currency in Enum.GetValues(typeof(CurrencyEnum)))
+        {
+            <option value="@currency">@currency</option>
+        }
+    </select>
+
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
+
+@if (ViewBag.ConvertedCurrency != null)
+{
+    <p>Omgezette valuta: @ViewBag.ConvertedCurrency</p>
+}

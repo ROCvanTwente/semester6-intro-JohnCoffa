@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Minuten Toevoegen";
+}
+<a href="/">Terug</a>
+<h3>Minuten toevoegen</h3>
+<form method="post"class="container p-4 rounded w-50 mt-5 form-control">
+    <div class="mb-3">
+        <label for="number" class="form-label">Voer datum en tijd in:</label>
+        <input type="datetime-local" name="currentDate" class="form-control" />
+
+        <label for="minutesToAdd" class="form-label">Minuten toevoegen:</label>
+        <input type="number" name="minutesToAdd" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
+
+@if (ViewBag.NewDate != null)
+{
+    <h3>Nieuwe datum: @ViewBag.NewDate</h3>
+}
